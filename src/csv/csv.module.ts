@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { BullModule } from '@nestjs/bull';
 import { CsvController } from './csv.controller';
 import { CSVProcessor } from './csv.processor';
+import { AppGateway } from 'src/app.gateway';
 
 @Module({
     imports: [
@@ -10,6 +11,6 @@ import { CSVProcessor } from './csv.processor';
       }),
     ],
     controllers: [CsvController],
-    providers: [CSVProcessor],
+    providers: [CSVProcessor,AppGateway],
   })
 export class CsvModule {}

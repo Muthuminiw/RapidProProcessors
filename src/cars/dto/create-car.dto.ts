@@ -6,5 +6,5 @@ export class CreateCarDto {
     car_model:string;
     vin:string;
     manufactured_date:Date;
-    age_of_vehicle:string;
+    age_of_vehicle:number;
 }
