@@ -3,7 +3,7 @@
     "host": "localhost",
     "port": 5432,
     "username": "postgres",
-    "password": "Datalake@456",
+    "password": "postgres",
     "database": "automobiles",
     "entities": ["dist/**/*.entity{.ts,.js}"],
     "synchronize": true,
